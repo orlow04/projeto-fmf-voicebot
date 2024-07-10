@@ -1,5 +1,5 @@
 # VoiceBOT
-por David O'Neil, Carlos Eduardo Rocha, Gabriel Orlow, José Ricardo Fleury e Lucas Wanderley
+por David O'Neil, Gabriel Orlow, João Victor Borges e José Ricardo Fleury 
 
 ## Introdução
 Chatbot desenvolvido para o Projeto FMF, ministrado pelo Professor Federson da UFG. O foco é apresentar uma ideia original à aquela apresentada pelo professor em sala. a inspiração para o projeto veio do modelo gerado em https://github.com/jerrytigerxu/Simple-Python-Chatbot.
