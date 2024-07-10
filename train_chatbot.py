@@ -9,13 +9,13 @@ import pickle
 import numpy as np
 import keras
 from keras import layers
-from keras import ops
+from keras import optimizers
 import random
 
 words=[]
 classes = []
 documents = []
-ignore_words = ['?', '!']
+ignore_words = ['?', '!', ',']
 data_file = open('intents.json').read()
 intents = json.loads(data_file)
 
@@ -43,9 +43,11 @@ print (len(documents), "documents")
 print (len(classes), "classes", classes)
 
 print (len(words), "unique lemmatized words", words)
+words.remove("'s")
 
 
 pickle.dump(words,open('words.pkl','wb'))
+print(words.shape())
 pickle.dump(classes,open('classes.pkl','wb'))
 
 # initializing training data
@@ -86,7 +88,7 @@ model.add(layers.Dropout(0.5))
 model.add(layers.Dense(len(train_y[0]), activation='softmax'))
 
 # Compile model. Stochastic gradient descent with Nesterov accelerated gradient gives good results for this model
-sgd = ops.SGD(lr=0.01, decay=1e-6, momentum=0.9, nesterov=True)
+sgd = optimizers.SGD(lr=0.01, decay=1e-6, momentum=0.9, nesterov=True)
 model.compile(loss='categorical_crossentropy', optimizer=sgd, metrics=['accuracy'])
 
 #fitting and saving the model
