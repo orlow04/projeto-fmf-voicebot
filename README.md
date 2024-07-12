@@ -22,3 +22,7 @@ São usadas algumas funções após o uso do modelo Sequential do Keras, que con
 
 ### C ou VISUALIZAÇÃO
 Para visualizar a resposta dos outputs gerados nas funções anteriores, a biblioteca tkinker é usada para gerar uma GUI em Python. Assim uma interface para a comunicação Q/A entre o usuário e o modelo é criado, gerando um streaming de mensagens de output
+
+## Links
+
+[Artigo Medium](https://towardsdatascience.com/how-to-create-a-chatbot-with-python-deep-learning-in-less-than-an-hour-56a063bdfc44)

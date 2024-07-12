@@ -1,4 +1,8 @@
+# Ambientes virtuais
 .venv
-.env
+.conda
+
 .vscode
+.env
+input
 output

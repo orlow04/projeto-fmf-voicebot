@@ -1,5 +1,4 @@
-openai == 1.35.13
-langchain == 0.2.7
-langchain-community == 0.2.7
-langchain-openai == 0.1.15
-pydub == 0.25.1
+langchain_community == 0.2.7
+faiss-cpu == 1.8.0.post1
+langchain_openai == 0.1.15
+langchain_text_splitters == 0.2.2
