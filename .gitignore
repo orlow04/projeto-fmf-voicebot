@@ -2,6 +2,7 @@
 .venv
 .conda
 
+.DS_Store
 .vscode
 .env
 input
